@@ -2,12 +2,20 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Col1</h2>
+    <div id="login">
+        <div>
         </div>
-        <div class="col-md-6">
-            <h2>Col2</h2>
+        <div>
+            <div class="login-center">
+                <h2 class="text-center">Inicio Sesion</h2>
+                <form class="vstack gap-1">
+                    <input class="form-control" type="text" placeholder="Usuario">
+                    <input class="form-control" type="password" placeholder="Contraseña">
+                    <input class="btn btn-primary" type="submit" value="Entrar">
+                </form>
+            </div>
+        </div>
+        <div>
         </div>
     </div>
 

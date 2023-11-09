@@ -1,3 +1,46 @@
 
-@import 'bootstrap.min.css';
+@import 'litera.bootstrap.min.css';
 @import 'bootstrap-grid.min.css';
+
+:root {
+    --local-background-pink: #ffe4e1;
+}
+
+html {
+    background-color: var(--local-background-pink);
+    background-image: url("/img/patron01.svg");
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+button, button.btn, input, input.btn a.btn {
+    border-radius: var(--bs-border-radius-lg)!important;
+}
+
+#logo_brand {
+    max-width: 14vw;
+    margin: auto;
+}
+
+#login {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto [first] 50% [second] auto;
+
+}
+
+.login-center {
+    width: 50%;
+    margin: auto;
+    padding: 4em;
+    background-color: #5b65b2;
+    box-shadow: 0px 0px 30px #000000b0;
+    border-radius: 8px;
+
+}

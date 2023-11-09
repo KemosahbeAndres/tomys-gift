@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-    <div class="container-fluid">
-        @yield('content')
-    </div>
+    @include('layouts.navbar')
+    @yield('content')
 </body>
 <script src="{{asset('js/app.js')}}"></script>
 </html>

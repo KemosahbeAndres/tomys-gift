@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ['categories' => [
+            (object)['name'=>'Tazas'],
+            (object)['name'=>'Collares']
+        ],
+        'featuredproducts' => []
+    ]);
 });
 
 Route::get('/login', function () {
